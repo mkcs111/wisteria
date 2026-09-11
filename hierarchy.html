@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisteria | Hierarchy</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decked.css">
+</head>
+<body>
+<nav id="navbar">
+    <a class="brand" href="index.html">Wisteria</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a><a href="who-we-are.html">Who We Are</a><a href="hierarchy.html">Hierarchy</a><a href="rules.html">Rules</a><a href="https://discord.gg/UKg8Kub9xY">Discord</a>
+    </div>
+</nav>
+<main class="hierarchy-page">
+    <section class="page-intro reveal">
+        <p class="eyebrow">Wisterian Structure</p>
+        <h1>Hierarchy</h1>
+        <p>Choose a rank to see what it does. Minister replaced Warden, and the Council of Commons is gone.</p>
+    </section>
+    <section class="hierarchy-explorer reveal" aria-label="Interactive Wisteria hierarchy">
+        <div class="rank-overview">
+            <div class="rank-tier crown-tier"><button class="rank-node selected" data-rank="Emperor" data-detail="Wisteria's final authority. Emperors guide the community, appoint senior leadership, and can veto Senate decisions that would harm Wisteria.">Emperor</button></div>
+            <div class="rank-tier special-tier"><button class="rank-node" data-rank="Hand" data-detail="The Emperor's appointed aide. The Hand can come from any branch and supports the Emperor without replacing a branch's command structure.">Hand</button><button class="rank-node" data-rank="Archduke" data-detail="Leads an accepted Wisterian sub-group or sub-server and reports directly to the Emperor.">Archduke</button></div>
+            <div class="rank-tier senate-tier"><button class="rank-node" data-rank="Chancellor" data-detail="Leads the Senate, coordinates senior branch leaders, and is elected by the community.">Chancellor</button><button class="rank-node" data-rank="Imperial Senate" data-detail="Trusted members who advise the Chancellor and vote on major Wisterian matters.">Imperial Senate</button></div>
+        </div>
+        <div class="branch-grid">
+            <article class="hierarchy-branch military"><h2>Military</h2><div class="rank-stack"><button class="rank-node" data-rank="General" data-detail="Leads Wisteria's armies, training, operations, and military promotions.">General</button><button class="rank-node" data-rank="Commander" data-detail="Assists the General with leadership, training, and operations.">Commander</button><button class="rank-node" data-rank="Imperial Knight" data-detail="A highly contributing and trusted military member.">Imperial Knight</button><button class="rank-node" data-rank="Knight" data-detail="A committed soldier progressing through the military branch.">Knight</button><button class="rank-node" data-rank="Specialist" data-detail="A skilled soldier with a specialist contribution or in-game role.">Specialist</button><button class="rank-node" data-rank="Soldier" data-detail="The main fighting force of Wisteria.">Soldier</button></div></article>
+            <article class="hierarchy-branch ingame"><h2>In-game</h2><div class="rank-stack"><button class="rank-node" data-rank="King" data-detail="Co-leads the main world and directs in-game promotions and demotions.">King</button><button class="rank-node" data-rank="Baron" data-detail="Recognises major contributions to the current world.">Baron</button><button class="rank-node" data-rank="High Lord" data-detail="Recognises steady contribution to the current world.">High Lord</button><button class="rank-node" data-rank="Lord" data-detail="Leads a town and its citizens in the main world.">Lord</button></div></article>
+            <article class="hierarchy-branch ministry"><h2>Ministry</h2><div class="rank-stack"><button class="rank-node" data-rank="Minister" data-detail="Formerly Warden. Ministers oversee Dukes and Counts, helping their groups remain active and supported.">Minister</button><button class="rank-node" data-rank="Duke" data-detail="Guides Members, encourages activity, and supports events and in-game participation.">Duke</button><button class="rank-node" data-rank="Count" data-detail="Guides Recruits and helps them become active Members.">Count</button><button class="rank-node" data-rank="Imperial Lord" data-detail="A committed contributor and a stepping stone to wider community leadership.">Imperial Lord</button></div></article>
+            <article class="hierarchy-branch logistics"><h2>Logistics</h2><div class="rank-stack"><button class="rank-node" data-rank="General Secretary" data-detail="Coordinates logistics, selects the General Quartermaster and Head Builder, and keeps the department operating.">General Secretary</button><button class="rank-node" data-rank="General Quartermaster" data-detail="Leads resource gathering for Wisteria's projects and operations.">General Quartermaster</button><button class="rank-node" data-rank="Head Builder" data-detail="Leads build projects and the Builder team.">Head Builder</button><button class="rank-node" data-rank="Quartermaster" data-detail="Gathers the resources requested for projects and operations.">Quartermaster</button><button class="rank-node" data-rank="Builder" data-detail="Builds Wisteria infrastructure and projects.">Builder</button></div></article>
+        </div>
+        <div class="community-tier"><button class="rank-node" data-rank="Recruit" data-detail="The starting point for applicants becoming active in Wisteria.">Recruit</button><button class="rank-node" data-rank="Member" data-detail="The backbone of Wisteria, selected from active Recruits.">Member</button><button class="rank-node" data-rank="Honorary Citizen" data-detail="A recognised community member who is no longer active in a regular role.">Honorary Citizen</button></div>
+        <aside class="rank-detail" aria-live="polite"><p class="eyebrow">Selected Rank</p><h2 id="rank-detail-title">Emperor</h2><p id="rank-detail-copy">Wisteria's final authority. Emperors guide the community, appoint senior leadership, and can veto Senate decisions that would harm Wisteria.</p></aside>
+    </section>
+</main>
+<footer><p>&copy; 2026 Wisteria Group.</p><div class="footer-links"><a href="terms.html">Terms</a><a href="usage-policy.html">Usage</a><a href="cookies.html">Cookies</a><a href="https://discord.gg/UKg8Kub9xY">Discord</a></div></footer>
+<script src="script.js" data-cfasync="false"></script>
+</body>
+</html>
