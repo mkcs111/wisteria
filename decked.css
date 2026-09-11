@@ -569,3 +569,47 @@ body:not(:has(.homeMain)) > main:not(.document-shell) {
     .pillarSection { padding-inline: 16px; }
     .siteFooter { padding-inline: 16px; }
 }
+
+/* Simpler, calmer public presentation */
+body { transition: none; }
+nav { height: 72px; background-color: var(--bg-primary); backdrop-filter: none; -webkit-backdrop-filter: none; }
+nav.scrolled { height: 72px; background-color: var(--bg-primary); }
+nav .brand { gap: 0; font-size: 24px; }
+nav .brand:hover { color: var(--accent); transform: none; }
+nav .nav-links { gap: 20px; }
+nav .nav-links a { font-size: 12px; letter-spacing: .02em; }
+nav a::after { height: 1px; box-shadow: none; }
+.homeMain { margin-top: 72px; }
+.homeHero { min-height: min(680px, calc(100vh - 72px)); padding-block: 64px; }
+.homeHero::before { animation: none; background-color: rgba(10, 6, 19, .7); }
+.homeHero h1 { font-size: clamp(56px, 7vw, 78px); }
+.heroLead { max-width: 540px; margin-top: 20px; font-size: 18px; }
+.heroActions { margin-top: 28px; }
+.heroNote { margin-top: 18px; }
+.scrollCue span { animation: none; }
+.signalBar div { min-height: 62px; padding: 14px 24px; }
+.signalBar div:hover { background-color: var(--bg-secondary); }
+.signalBar strong { font-family: inherit; font-size: 15px; }
+.storyBand, .pathBand { gap: 64px; padding-block: 88px; }
+.sectionHeading h2, .pathIntro h2, .joinBand h2 { font-size: clamp(34px, 4vw, 48px); }
+.storyCopy { padding-left: 24px; }
+.pillarSection { padding-block: 88px; }
+.pillarCard { min-height: 280px; padding: 28px; transition: background-color .2s ease; }
+.pillarCard:hover { background-color: var(--bg-primary); transform: none; }
+.pillarCard h3 { margin-top: 42px; font-size: 32px; }
+.pillarTag { margin-top: 26px; }
+.pathSteps li { padding-block: 20px; }
+.pathSteps li:hover { padding-left: 0; background-color: transparent; }
+.joinBand { margin-bottom: 80px; padding: 64px 36px; border-color: var(--border); }
+.joinBand::after { display: none; }
+.siteFooter { gap: 28px 48px; padding-block: 44px; }
+.footerBrand { gap: 0; }
+.pageHero, .page-intro { padding-block: 58px 48px; }
+.pageHero h1, .page-intro h1, .legal-page h1 { font-size: clamp(42px, 5vw, 56px); }
+.card:hover, .rule-item:hover { box-shadow: none; }
+.rule-item::before { display: none; }
+.hierarchy-branch:hover { border-color: var(--border); transform: none; }
+.legal-page section:hover { padding-left: 0; background-color: transparent; }
+.reveal { transform: translateY(14px); }
+.homeHero .heroCopy.active { animation: none; }
+@media (max-width: 768px) { nav, nav.scrolled { height: 66px; } .homeMain { margin-top: 66px; } .homeHero { min-height: calc(100svh - 66px); } }
