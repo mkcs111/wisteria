@@ -613,3 +613,14 @@ nav a::after { height: 1px; box-shadow: none; }
 .reveal { transform: translateY(14px); }
 .homeHero .heroCopy.active { animation: none; }
 @media (max-width: 768px) { nav, nav.scrolled { height: 66px; } .homeMain { margin-top: 66px; } .homeHero { min-height: calc(100svh - 66px); } }
+
+/* Motion for the main homepage */
+.homeMain .reveal { opacity: 0; transform: translateY(22px); }
+.homeMain .reveal.active { opacity: 1; transform: translateY(0); transition: opacity .7s ease, transform .7s ease; }
+.homeHero .heroCopy.active { animation: heroArrival .85s cubic-bezier(.16, 1, .3, 1) both; }
+.homeHero::before { animation: heroShade 10s ease-in-out infinite alternate; }
+.scrollCue span { animation: scrollBounce 1.7s ease-in-out infinite; }
+.pillarCard { transition: background-color .25s ease, transform .3s cubic-bezier(.16, 1, .3, 1); }
+.pillarCard:hover { background-color: var(--bg-accent); transform: translateY(-5px); }
+.pathSteps li { transition: padding-left .25s ease, background-color .25s ease; }
+.pathSteps li:hover { padding-left: 10px; background-color: var(--softSurface); }
